@@ -17,7 +17,7 @@ dlt.addEventListener("click", () => {
     if (arr.length >= 1) {
         const list = document.getElementById("list");
         const node = document.querySelectorAll("li")
-        alert(node[node.length - 1].innerText + " Deleted");
+        alert("( " + node[node.length - 1].innerText + " )" + " Deleted");
         const removed = list.removeChild(arr[arr.length - 1]);
         const dlt_item = arr.pop();
         // console.log(arr.toString());
